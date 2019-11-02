@@ -20,7 +20,7 @@ if (post_password_required()) {
 }
 ?>
 
-<div id="comments" class="card card-body comments-area">
+<div id="comments" class="card card-body mb-4 comments-area">
 
 	<?php
     // You can start editing here -- including this comment!
