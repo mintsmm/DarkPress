@@ -166,3 +166,38 @@ body {
         }
     }
 }
+
+.card-footer {
+    font-size: 15px;
+    color: $card__link___dark;
+    a {
+        color: $card__link___dark;
+        &:hover {
+            color: $accent__color_primary;
+            text-decoration: $txt__decoration_none;
+        }
+    }
+    i {
+        opacity: 0.5;
+    }
+    .cat-links,
+    .tags-links,
+    .comment-links {
+        font-size: 15px;
+        display: block;
+    }
+}
+
+.site-footer {
+    color: $card__link___dark;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: $secondary;
+    a {
+        color: $card__link___dark;
+        &:hover {
+            color: $accent__color_primary;
+            text-decoration: $txt__decoration_none;
+        }
+    }
+}

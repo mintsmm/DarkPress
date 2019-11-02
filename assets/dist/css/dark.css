@@ -190,3 +190,44 @@ body {
   text-decoration: none;
 }
 
+.card-footer {
+  font-size: 15px;
+  color: #ffffff !important;
+}
+
+.card-footer a {
+  color: #ffffff !important;
+}
+
+.card-footer a:hover {
+  color: #ff2d20 !important;
+  text-decoration: none !important;
+}
+
+.card-footer i {
+  opacity: 0.5;
+}
+
+.card-footer .cat-links,
+.card-footer .tags-links,
+.card-footer .comment-links {
+  font-size: 15px;
+  display: block;
+}
+
+.site-footer {
+  color: #ffffff !important;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #222222 !important;
+}
+
+.site-footer a {
+  color: #ffffff !important;
+}
+
+.site-footer a:hover {
+  color: #ff2d20 !important;
+  text-decoration: none !important;
+}
+

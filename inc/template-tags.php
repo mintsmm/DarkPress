@@ -59,19 +59,19 @@ if ( ! function_exists( 'darkpress_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'darkpress' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'darkpress' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links"><i class="fa fa-folder mr-1"></i> ' . esc_html__( '%1$s', 'darkpress' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'darkpress' ) );
 			if ( $tags_list ) {
 				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'darkpress' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links"><i class="fa fa-tags mr-1"></i> ' . esc_html__( '%1$s', 'darkpress' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo '<span class="comments-link"><i class="fa fa-comment mr-1"></i> ';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
