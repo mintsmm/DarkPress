@@ -1,0 +1,168 @@
+@import "variables";
+// Layout Styles
+body {
+    background-color: $primary;
+}
+
+.bg-darker {
+    background-color: $secondary;
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        border: none;
+        &:focus {
+            outline: none;
+        }
+    }
+    .dropdown-menu {
+        background-color: #333;
+        border-color: #333;
+        border-radius: 0;
+        .dropdown-item {
+            color: $navbar__link__dark;
+            &:hover {
+                background-color: transparent;
+                color: $navbar__link__dark_hover;
+            }
+            &:active,
+            &:focus {
+                background-color: transparent;
+                color: $navbar__link__dark_hover;
+            }
+        }
+    }
+}
+
+.form-control {
+    background-color: $secondary;
+    border-radius: 0!important;
+    border-color: $primary;
+    color: $primary;
+    &:focus {
+        background-color: $secondary;
+        border-color: $primary;
+        color: $primary;
+    }
+}
+
+.card {
+    background-color: $secondary;
+    border: none;
+    border-radius: 0!important;
+    color: $card__link___dark;
+    .card-title {
+        color: $card__link___dark;
+        a {
+            color: $card__link___dark;
+            &:hover {
+                color: $card__link___dark_hover;
+                text-decoration: $txt__decoration_none;
+            }
+        }
+    }
+    .card-subtitle {
+        color: $card__link___dark_hover;
+    }
+    .card-text {
+        color: $card__link___dark;
+    }
+    .card-link {
+        color: $card__link___dark;
+        a {
+            color: $card__link___dark;
+            &:hover {
+                color: $card__link___dark_hover;
+                text-decoration: $txt__decoration_none;
+            }
+        }
+    }
+    .card-meta {
+        font-size: 15px;
+        color: $card__link___dark;
+        a {
+            color: $card__link___dark;
+            &:hover {
+                color: $accent__color_primary;
+                text-decoration: $txt__decoration_none;
+            }
+        }
+        i {
+            opacity: 0.5;
+        }
+    }
+    .card-divider {
+        opacity: 0.5;
+    }
+}
+
+.site-header {
+    color: $header__link__dark;
+    .site-branding {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        .site-title {
+            color: $header__link__dark;
+            a {
+                color: $header__link__dark;
+                &:hover {
+                    color: $header__link__dark_hover;
+                    text-decoration: none;
+                }
+            }
+        }
+        .site-description {
+            color: $header__link__dark;
+            font-size: 15px;
+            font-weight: 300;
+        }
+    }
+}
+
+.widget {
+    ul {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+            position: relative;
+            display: block;
+            padding: .75rem 0;
+            margin-bottom: -1px;
+            color: $header__link__dark;
+            a {
+                color: $header__link__dark;
+                &:hover {
+                    color: $accent__color_primary;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.nav-links {
+    display: flex;
+    color: $card__link___dark;
+    .nav-previous {
+        a {
+            color: $header__link__dark;
+            &:hover {
+                color: $accent__color_primary;
+                text-decoration: none;
+            }
+        }
+    }
+    .nav-next {
+        a {
+            color: $header__link__dark;
+            &:hover {
+                color: $accent__color_primary;
+                text-decoration: none;
+            }
+        }
+    }
+}

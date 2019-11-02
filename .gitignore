@@ -1,0 +1,4 @@
+node_modules
+package-lock.json
+vendor
+assets/dist/mix-manifest.json
